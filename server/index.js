@@ -11,7 +11,11 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+  origin: ["https://mern-tic-tac-toe.onrender.com"],
+  methods: ["POST", "GET"],
+  credentials: true
+}));
 
 // Connect to MongoDB
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });

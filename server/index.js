@@ -33,6 +33,11 @@ const gameSchema = new mongoose.Schema({
 
 const Game = mongoose.model('Game', gameSchema);
 
+app.get('/', (req, res) => {
+  console.log('ENDPOINT: /')
+  res.json("Connected")
+})
+
 app.get('/games', async (req, res) => {
   try {
     const games = await Game.find().sort({ matchDate: -1 });

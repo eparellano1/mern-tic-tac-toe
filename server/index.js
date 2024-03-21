@@ -12,7 +12,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 // Middleware
 app.use(bodyParser.json());
 app.use(cors({
-  origin: ["https://deploy-mern-tic-tac-toe.vercel.app"],
+  origin: ["https://jade-pasca-057156.netlify.app/"],
   methods: ["POST", "GET"],
   credentials: true
 }));

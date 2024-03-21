@@ -12,7 +12,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 // Middleware
 app.use(bodyParser.json());
 app.use(cors({
-  origin: ["https://mern-tic-tac-toe.onrender.com"],
+  origin: ["deploy-mern-tic-tac-ocjge1yvj-eparellano1s-projects.vercel.app"],
   methods: ["POST", "GET"],
   credentials: true
 }));

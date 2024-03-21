@@ -34,12 +34,14 @@ const gameSchema = new mongoose.Schema({
 const Game = mongoose.model('Game', gameSchema);
 
 app.get('/', (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
   console.log('ENDPOINT: /')
   res.json("Connected")
 })
 
 app.get('/games', async (req, res) => {
   try {
+    res.setHeader("Access-Control-Allow-Origin", "*");
     const games = await Game.find().sort({ matchDate: -1 });
     res.json(games);
   } catch (error) {
@@ -50,6 +52,7 @@ app.get('/games', async (req, res) => {
 
 app.post('/games', async (req, res) => {
   try {
+    res.setHeader("Access-Control-Allow-Origin", "*");
     const { player1Name, player2Name, player1Wins, player2Wins } = req.body;
     const newGame = new Game({
       player1Name,

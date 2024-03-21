@@ -25,4 +25,9 @@ cd mern-tic-tac-toe
 npm start
 ```
 
+You can now play the game via your browser using the URL 
+```
+http://localhost:3000/
+```
+
 Enjoy Playing! 😊 

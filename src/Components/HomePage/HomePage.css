@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    background: rgb(16,29,34);
+    background: radial-gradient(circle, rgba(16,29,34,1) 0%, rgba(7,10,17,1) 100%);
+}
+.container {
+    text-align: center;
+}
+
+.title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle {
+    margin-top:5px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-history-container {
+    margin: 0 auto; 
+    max-width: 800px; 
+    padding: 20px; 
+    font-family: 'Poppins', sans-serif; 
+  }
+  
+.game-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+.game-history-table th,
+.game-history-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    color: white; 
+    text-align: center;
+    font-size: 18px;
+}
+.game-history-table tr:hover {
+    background-color: #504c4c;
+}
+  
+.game-history-table th {
+    background-color: #333;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+}
+
+.homePageButtons {
+    width: 200px;
+    height: 70px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #1f3540;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #26ffcb;
+    margin: 25px auto;
+    padding: 10px;
+    transition: all 0.1s ease;
+    /* letter-spacing: 1px; */
+}
+
+.homePageButtons:hover {
+    width: 205px;
+    height: 73px;
+    font-size: 32px;
+}

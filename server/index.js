@@ -12,9 +12,9 @@ const MONGODB_URI = process.env.MONGODB_URI;
 // Middleware
 app.use(bodyParser.json());
 app.use(cors({
-  origin: ["https://jade-pasca-057156.netlify.app/"],
-  methods: ["POST", "GET"],
-  credentials: true
+  origin:'*', 
+  credentials:true,            //access-control-allow-credentials:true
+  optionSuccessStatus:200,
 }));
 
 // Connect to MongoDB

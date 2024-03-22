@@ -1,7 +1,15 @@
 # mern-tic-tac-toe
-A Tic Tac Toe game that uses the MERN stack.
+A fullstack Tic Tac Toe game that uses the MERN stack.
 
-## Installation
+## Live App
+You can play the live app online using the following link:
+```
+https://jade-pasca-057156.netlify.app/
+```
+Alternatively, you can run the app locally on your machine using the steps below:
+
+
+## Local Installation
 Using the terminal, clone the repo to your local machine
 
 ```

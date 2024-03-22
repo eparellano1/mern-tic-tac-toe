@@ -2,10 +2,9 @@
 A fullstack Tic Tac Toe game that uses the MERN stack.
 
 ## Live App
-You can play the live app online using the following link:
-```
-https://jade-pasca-057156.netlify.app/
-```
+You can play the live app by clicking [**HERE**](https://jade-pasca-057156.netlify.app/)
+
+
 Alternatively, you can run the app locally on your machine using the steps below:
 
 
